@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <title>Meeting Minutes</title>
+    <meta charset="UTF-8">
+    <link rel="icon" href="favicon.ico">
+  </head>
+
+  <body>
+    <header>
+        <h1>Team Yeehaw Meeting Minutes</h1>
+        <h2>Brainstorming</h2>
+        <p><b>Date:</b> Friday, April 12th, 2024</p>
+        <p><b>Time:</b> 7:00 pm</p>
+        <p><b>Location:</b> Yappertown</p>
+        <p><b>Attendees:</b> Sir Sussington, Snoopy, Ms. Yappers</p>
+        <p><b>Absent:</b> Cotton-Eye Joe </p>
+    </header>
+
+    <main>
+        <section id="agenda">
+            <h3>Agenda</h3>
+            <nav>
+                <ol>
+                    <li>Unfinished from last meeting</li>
+                    <ol>
+                        <li>None</li>
+                    </ol>
+                    <li><a href="#recap"> Recap of last week</a></li>
+                    <li><a href="#designs">Design Brainstorming</a></li>
+                    <li><a href="#misc">Miscellaneous</a></li>
+                    <li><a href="#form">Signup Form</a></li>
+                </ol>
+            </nav>
+        </section>
+
+        <section id="recap">
+            <h3>Last Week Recap</h3>
+            <ul>
+                <li>Finalized song and music video</li>
+                <ul>
+                    <li> Music video</li>
+                    <video controls width="320" heigh="240">
+                        <source src="./media/music-video.mp4" type="video/mp4" />
+                    </video>
+                    <li>Music Audio Only</li>
+                    <audio controls>
+                        <source src="./media/music-audio.mp3" type="audio/mpeg" />
+                    </audio>
+                </ul>
+                <details>
+                    <summary>Video & Audio Source</summary>
+                    <p><a href="https://www.youtube.com/watch?v=cYI_IicI8cs">The Cowboy Cats sing ''Cotton Eye Joe" (Gegagedigedagedagо)</a></p>
+                </details>
+            </ul>
+        </section>
+
+        <section id="designs">
+            <h3>Design Brainstorming</h3>
+            <ul>
+                <li><strong>Option 1:</strong> Gru's Moon Rocket from Despicable Me</li>
+                <img src="./media/rocket.jpeg" width="500" height="300" alt="Gru's Moon Rocket from Despicable Me" />
+                <li><strong>Option 2:</strong> The Magic School Bus from The Magic School Bus</li>
+                <img src="./media/bus.jpeg" width="500" height="300" alt="The Magic School Bus from The Magic School Bus" />
+            </ul>
+        </section>
+
+        <section id="misc">
+            <h3>Miscellaneous</h3>
+            <ul>
+                <li>Send any updates to the <em>team</em> email <em>only</em></li>
+                <li>Voting on <i>fonts and colors</i> will be <i>next</i> week</li>
+                <li>Reminder to fill out the signup form by <em>Monday, April 15</em>!</li>
+            </ul>
+        </section>
+        
+        <section id="form">
+            <h3>Signup Form</h3>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <br>
+                <label for="email">Email:</label>
+                <input type="text" id="email" name="email">
+                <br>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <br>
+                <br>
+                <fieldset>
+                    <legend>Shift Details:</legend>
+                    <div>
+                        <p>Slot Time</p>
+                        <input type="radio" id="morning" name="slot" value="10am-1pm">
+                        <label for="morning">10am-1pm</label>
+                        <br>
+                        <input type="radio" id="afternoon" name="slot" value="1pm-4pm">
+                        <label for="afternoon">1pm-4pm</label>
+                        <br>
+                        <input type="radio" id="evening" name="slot" value="4pm-7pm">
+                        <label for="evening">4pm-7pm</label>
+                    </div>
+                    <div>
+                        <br>
+                        <label for="position">Position:</label>
+                        <select name="position" id="position">
+                            <option value="check-in">Check In</option>
+                            <option value="monitor">Monitor</option>
+                            <option value="caller">Caller</option>
+                            <option value="packer">Packer</option>
+                            <option value="check-out">Check Out</option>
+                        </select>
+                    </div>
+                    <div>
+                        <br>
+                        <label for="location">Location:</label>
+                        <input list="locations" name="location" id="location">
+                        <datalist id="locations">
+                            <option value="In Person">
+                            <option value="Online">
+                            <option value="Hybrid">
+                        </datalist>
+                    </div>
+
+
+                </fieldset>
+                <br>
+                <label for="questions">Questions/Concerns:</label>
+                <textarea id="questions" name="questions" rows="2" cols="50"></textarea>
+                <br>
+                <input type="checkbox" id="confirm" name="confirm" value="confirm">
+                <label for="confirm">Send me an email confirmation</label>
+                <br>
+                <button type="button">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <hr>
+        <span>Team Yeehaw | Spring 2024</span>
+    </footer>
+  </body>
+
+</html>
