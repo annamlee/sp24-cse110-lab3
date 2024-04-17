@@ -7,14 +7,14 @@ assignees: ''
 
 ---
 
-**Title**
+**Title:**
 issue title
 
-**Description**
+**Description:**
 summarize the issue
 
-**Expected Behavior**
+**Expected Behavior:**
 describe what was supposed to happen
 
-**Screenshots**
+**Screenshots:**
 add screenshots of the bug if necessary
